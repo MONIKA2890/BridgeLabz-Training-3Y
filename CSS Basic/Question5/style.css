@@ -1,0 +1,175 @@
+
+/* Reset browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6f9;
+    color: #222;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Main */
+main {
+    flex: 1;
+}
+
+/* Pricing container */
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    padding: 60px 8%;
+}
+
+/* Individual pricing plan */
+.plan {
+    position: relative;
+
+    flex: 1;
+
+    background-color: white;
+
+    border: 2px solid #ddd;
+    border-radius: 15px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    /* Equal-height cards */
+    display: flex;
+    flex-direction: column;
+
+    /* Shadow */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    /* Smooth transition */
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* Hover effect */
+.plan:hover {
+    transform: scale(1.05);
+    background-color: #eef6ff;
+}
+
+/* Plan heading */
+.plan h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Price */
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.price span {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+/* Features */
+.plan ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.plan li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+
+    margin-top: auto;
+
+    padding: 12px 25px;
+
+    background-color: #1976d2;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0d47a1;
+}
+
+/* Highlight Standard plan */
+.popular {
+    border: 3px dashed #1976d2;
+}
+
+/* Most Popular badge */
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #1976d2;
+    color: white;
+
+    padding: 6px 15px;
+    border-radius: 20px;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+
+    .pricing {
+        flex-direction: column;
+        padding: 40px 10%;
+    }
+
+    .plan {
+        width: 100%;
+    }
+}

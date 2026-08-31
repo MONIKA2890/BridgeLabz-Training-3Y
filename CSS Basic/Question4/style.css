@@ -1,0 +1,109 @@
+
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page */
+body {
+    font-family: Georgia, serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.subheading {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Article container */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+/* Paragraph styling */
+article p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+
+    /* Consistent spacing between paragraphs */
+    margin-bottom: 25px;
+}
+
+/* Make first letter larger */
+article p::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Make first line bold */
+article p::first-line {
+    font-weight: bold;
+}
+
+/* Highlight important words */
+mark {
+    background-color: #ffe082;
+    color: #222;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Blockquote styling */
+blockquote {
+    background-color: #eef5ff;
+
+    border-left: 6px solid #1976d2;
+
+    margin: 30px 0;
+    padding: 25px;
+
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+
+    main {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    article p {
+        font-size: 1rem;
+    }
+}
+
