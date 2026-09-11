@@ -1,0 +1,169 @@
+/* =========================================
+   GENERAL STYLING
+   ========================================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Main content */
+main {
+    width: 80%;
+    margin: auto;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   ATTRIBUTE SELECTORS
+   ========================================= */
+
+/* 
+   [type="text"]
+   Selects input elements whose type is text
+*/
+input[type="text"] {
+    border: 3px solid blue;
+    padding: 10px;
+}
+
+
+/*
+   [href^="https"]
+   ^ means "starts with"
+
+   Selects links whose href starts with https
+*/
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   PSEUDO-CLASSES
+   ========================================= */
+
+/*
+   :hover
+   Applies style when mouse moves over element
+*/
+a:hover {
+    color: red;
+}
+
+
+/*
+   :focus
+   Applies style when an input is selected/focused
+*/
+input:focus {
+    outline: 3px solid orange;
+}
+
+
+/*
+   :nth-child()
+   Selects elements based on their position
+*/
+.skills li:nth-child(2) {
+    background-color: lightblue;
+}
+
+.skills li:nth-child(4) {
+    background-color: lightgreen;
+}
+
+
+/* =========================================
+   PSEUDO-ELEMENTS
+   ========================================= */
+
+/*
+   ::before
+   Adds content before the heading
+*/
+h2::before {
+    content: "★ ";
+}
+
+
+/*
+   ::after
+   Adds content after the heading
+*/
+h2::after {
+    content: " ✓";
+}
+
+
+/* =========================================
+   COMBINATORS
+   ========================================= */
+
+/*
+   DESCENDANT COMBINATOR
+   Space between selectors
+
+   Selects every p inside .combinators
+*/
+.combinators p {
+    color: darkblue;
+}
+
+
+/*
+   CHILD COMBINATOR >
+   Selects only direct children
+*/
+.combinators > p {
+    font-weight: bold;
+}
+
+
+/*
+   Adjacent sibling combinator +
+   Selects the first p immediately after div
+*/
+.combinators div + p {
+    background-color: lightyellow;
+    padding: 10px;
+}
+
+
+/*
+   General sibling combinator ~
+   Selects all p elements that are
+   siblings after div
+*/
+.combinators div ~ p {
+    border-left: 5px solid purple;
+    padding-left: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

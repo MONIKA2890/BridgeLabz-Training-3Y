@@ -1,0 +1,73 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* 
+   Flexbox centers all boxes
+   horizontally and vertically
+*/
+.container {
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Common box styling */
+.box {
+    padding: 20px;
+    text-align: center;
+
+    /* max-width demonstration */
+    max-width: 300px;
+
+    /* Prevent content from overflowing */
+    overflow: auto;
+}
+
+/* Box 1 - px units */
+.box1 {
+    width: 200px;
+    height: 150px;
+    background-color: lightblue;
+}
+
+/* Box 2 - percentage width */
+.box2 {
+    width: 40%;
+    height: 200px;
+    background-color: lightgreen;
+
+    /* Minimum height */
+    min-height: 150px;
+}
+
+/* Box 3 - em and vh units */
+.box3 {
+    width: 15em;
+    height: 30vh;
+    background-color: lightpink;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}

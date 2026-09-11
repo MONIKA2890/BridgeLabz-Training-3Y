@@ -1,0 +1,89 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* 
+   Text shadow gives depth to heading
+*/
+header h1 {
+    text-shadow: 3px 3px 5px gray;
+}
+
+/* 
+   Flexbox arranges cards in one row
+*/
+.cards {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Common card styling */
+.card {
+    width: 250px;
+    min-height: 180px;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    /* Smooth animation */
+    transition: all 0.4s ease;
+}
+
+/* Different box shadows */
+
+/* Small shadow */
+.shadow1 {
+    box-shadow: 5px 5px 10px gray;
+}
+
+/* Medium shadow */
+.shadow2 {
+    box-shadow: 10px 10px 20px gray;
+}
+
+/* Large blurred shadow */
+.shadow3 {
+    box-shadow: 0 15px 30px gray;
+}
+
+/* 
+   Hover effect:
+   Card moves upward and shadow becomes larger
+*/
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 35px gray;
+}
+
+/* Card heading */
+.card h2 {
+    text-shadow: 2px 2px 4px lightgray;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
