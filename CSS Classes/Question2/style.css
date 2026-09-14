@@ -1,0 +1,81 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #222;
+    color: white;
+}
+
+/* Main tooltip area */
+.tooltip-container {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Tooltip parent */
+.tooltip-box {
+    position: relative;
+    display: inline-block;
+}
+
+/* Elements */
+.tooltip-box span {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #0077b6;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 180px;
+    padding: 10px;
+
+    background-color: #222;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+
+    /* Initially hidden */
+    opacity: 0;
+    visibility: hidden;
+
+    /* Smooth fade effect */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show tooltip on hover */
+.tooltip-box:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}

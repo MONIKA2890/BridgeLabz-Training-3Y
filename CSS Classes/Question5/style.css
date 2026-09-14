@@ -1,0 +1,113 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #222;
+    color: white;
+}
+
+/* Button container */
+.button-container {
+    min-height: 400px;
+
+    /* Flexbox alignment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+/* Common button styling */
+.btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Primary button */
+.primary {
+    background-color: #0077b6;
+    color: white;
+    border: 2px solid #0077b6;
+}
+
+/* Primary hover */
+.primary:hover {
+    background-color: #005f8a;
+}
+
+/* Secondary button */
+.secondary {
+    background-color: #555;
+    color: white;
+    border: 2px solid #555;
+}
+
+/* Secondary hover */
+.secondary:hover {
+    background-color: #333;
+}
+
+/* Outline button */
+.outline {
+    background-color: transparent;
+    color: #0077b6;
+    border: 2px solid #0077b6;
+}
+
+/* Outline hover */
+.outline:hover {
+    background-color: #0077b6;
+    color: white;
+}
+
+/* Active effect */
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Focus effect */
+.btn:focus {
+    outline: 3px solid #90e0ef;
+    outline-offset: 3px;
+}
+
+/* Disabled button */
+.btn:disabled {
+    background-color: #ccc;
+    color: #777;
+    border-color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,89 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+
+/* Image gallery using CSS Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Figure */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+/* Image container */
+.image-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+.image-box img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Image hover effect */
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Dark overlay on hover */
+.image-box:hover .overlay {
+    opacity: 1;
+}
+
+/* Caption */
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,111 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* Each example box */
+.example {
+    background-color: white;
+    width: 220px;
+    min-height: 230px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* H2 */
+.example h2 {
+    margin-top: 0;
+}
+
+/* :hover example */
+.example a {
+    display: inline-block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Changes when mouse is over link */
+.example a:hover {
+    color: white;
+    background-color: #0077b6;
+    border-radius: 5px;
+}
+
+/* :focus example */
+.example button {
+    padding: 10px 15px;
+    border: 2px solid #999;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* Changes when button receives focus */
+.example button:focus {
+    outline: none;
+    border-color: #0077b6;
+    background-color: #dff3ff;
+}
+
+/* :active example */
+.active-btn:active {
+    background-color: #222;
+    color: white;
+    transform: scale(0.95);
+}
+
+/* nth-child example */
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Selects the second list item */
+.list li:nth-child(2) {
+    background-color: #90e0ef;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
