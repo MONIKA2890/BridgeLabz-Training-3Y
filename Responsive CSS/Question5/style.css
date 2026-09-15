@@ -1,0 +1,136 @@
+
+/* Basic Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #222;
+    color: white;
+}
+
+/* Profile Cards Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 30px;
+}
+
+/* Profile Card */
+.profile-card {
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    /* Fade-in animation */
+    animation: fadeIn 1s ease-in;
+
+    /* Smooth hover effect */
+    transition: transform 0.3s ease;
+}
+
+/* Profile Image */
+.profile-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    /* Smooth filter transition */
+    transition: filter 0.4s ease;
+}
+
+/* Grayscale Filter */
+.gray-image {
+    filter: grayscale(100%);
+}
+
+/* Sepia Filter */
+.sepia-image {
+    filter: sepia(100%);
+}
+
+/* Hover Effects */
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-card:hover img {
+    filter: none;
+}
+
+/* Text Content */
+.profile-content {
+    padding: 20px;
+}
+
+.profile-content h2 {
+    margin: 5px 0;
+}
+
+.profile-content h3 {
+    margin: 10px 0;
+}
+
+.profile-content p {
+    line-height: 1.5;
+}
+
+/* Fade-in Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stack cards below 800px */
+@media (max-width: 800px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+/* Smaller mobile screens */
+@media (max-width: 500px) {
+    .profile-container {
+        padding: 30px 15px;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
